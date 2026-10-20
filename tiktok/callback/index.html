@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Conectando TikTok</title>
+<script>
+  // Reenvía el callback OAuth de TikTok a Composio conservando code y state.
+  // Si cambia el callback de Composio, actualiza solo esta constante.
+  var COMPOSIO_CALLBACK = "https://backend.composio.dev/api/v3.1/toolkits/auth/callback";
+  location.replace(COMPOSIO_CALLBACK + location.search + location.hash);
+</script>
+<style>
+  body { margin: 0; min-height: 100vh; display: grid; place-items: center; background: #FAFAFC; color: #14142E;
+         font: 400 16.5px/1.5 Nunito, system-ui, sans-serif; }
+</style>
+</head>
+<body>
+  <p>Conectando tu cuenta de TikTok…</p>
+</body>
+</html>
