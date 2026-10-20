@@ -8,7 +8,7 @@
 <script>
   // Reenvía el callback OAuth de TikTok a Composio conservando code y state.
   // Si cambia el callback de Composio, actualiza solo esta constante.
-  var COMPOSIO_CALLBACK = "https://backend.composio.dev/api/v3.1/toolkits/auth/callback";
+  var COMPOSIO_CALLBACK = "https://backend.composio.dev/api/v1/auth-apps/add";
   location.replace(COMPOSIO_CALLBACK + location.search + location.hash);
 </script>
 <style>
